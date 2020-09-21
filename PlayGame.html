@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="assets/styling/PlayGame.css">
+
+    <title>Stone-scissors-paper</title>
+  </head>
+  <body>
+      <div class="container">
+         <!-- Header -->
+        <section class="header">
+            <div class="row mb-3 justify-content-start">
+                <div class="col icon mt-2">
+                  <figure class="mr-5 my-auto back">
+                    <input type="image" src="assets/back.png" onclick="location.href='index.html'">
+                  </figure>
+                    <!-- <img src="assets/back.png" alt="back" class="mr-5 my-auto back"> -->
+                    <img src="assets/logo.svg" alt="logo">
+                    <p class="title">ROCK PAPER SCISSORS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Section -->
+        <div class="container">
+
+          <!-- Row -->
+            <div class="row pt-3 ">
+              <!-- col-1 -->
+              <div class="col-md-4 ">
+                <h1 class="font-weight-bold text-center">PLAYER</h1>
+                  <figure id="stone" class="d-block mx-auto">
+                    <input type="image" class="my-3 rocks player img-hover stone-img-src" 
+                     onclick="playerClick('stone');">
+                  </figure>
+                  <figure id="scissors" class="d-block mx-auto">
+                      <input type="image" class="mb-3 rocks player img-hover scissors-img-src" 
+                      onclick="playerClick('scissors')">
+                  </figure>
+                  <figure id="paper" class="d-block mx-auto">
+                      <input type="image" class="mb-3 rocks player img-hover paper-img-src"
+                      onclick="playerClick('paper')">
+                  </figure>
+              </div>
+
+              <!-- Col-2 -->
+              <div class="col-md-4">
+                <div class="text-center">
+                  <div class="vs" id="vs">
+                      <h1>VS</h1>
+                  </div>
+                  <div class=" py-5 player-win" id="player-win">
+                      <p">PLAYER</p>
+                      <p>WIN</p>
+                  </div>
+                  <div class="py-5 com-win" id="com-win">
+                      <p>COM</p>
+                      <p>WIN</p>
+                  </div>
+                  <div class="py-5 draw" id="draw">
+                      <p>DRAW</p>
+                  </div>
+              </div>
+
+              <!-- Refresh button -->
+              <section id="refresh">
+                <figure onclick="reset()" class="img-hover rocks">
+                    <input type="image" src="assets/refresh.png" class="refresh">
+                </figure>
+              </section>
+              </div>
+              
+              <!-- Col-3 --> 
+              <div class="col-md-4 ">
+                <h1 class="font-weight-bold text-center">COMPUTER</h1>
+                  <figure id="com-stone" class="d-block mx-auto">
+                    <input type="image" class="my-3 rocks stone-img-src">
+                  </figure>
+                  <figure id="com-scissors" class="d-block mx-auto">
+                      <input type="image" class="mb-3 rocks scissors-img-src">
+                  </figure>
+                  <figure id="com-paper" class="d-block mx-auto">
+                      <input type="image" class="mb-3 rocks paper-img-src">
+                  </figure>
+              </div>
+            </div>
+        </div>
+      </div>
+    <script src="PlayGame.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
