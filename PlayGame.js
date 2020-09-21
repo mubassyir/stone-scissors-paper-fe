@@ -12,14 +12,14 @@ try{
         let arrayImageUrl = [];
         let data = JSON.parse(this.response)
         data.play_game.forEach((image)=> arrayImageUrl.push(image.url));
-        console.log(arrayImageUrl); // => checking url query from end point
+        loggingData(arrayImageUrl); // => checking url query from end point
         stone.forEach(i => i.setAttribute('src',arrayImageUrl[0]));
         scissors.forEach(j => j.setAttribute('src',arrayImageUrl[1]));
         paper.forEach(k => k.setAttribute('src',arrayImageUrl[2]));
         }
     request.send();
 } catch(err) {
-    console.log(err.message);
+    loggingData(err.message);
 }
     
 document.getElementById('refresh').style.display = 'none';
