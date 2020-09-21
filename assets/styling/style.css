@@ -1,0 +1,108 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color: black;
+}
+#page1{
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#navbar-bg{
+    background-color: #0a0a0a50;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+#icon{
+    font-size: 2rem;
+}
+
+#main-content{
+    margin-top: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.arrow-down {
+    position: absolute;
+    bottom: 5vh;
+    z-index: 1;
+    text-align: center;
+    min-width: 100vw;
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pg2-col1{
+    margin: 7.5% 0;
+}
+#slider{
+    margin: 15% 0;
+}
+ .carousel-item img{
+    height: 60vh;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}   
+#header-spec{
+    text-align: center;
+}
+#features{
+    margin: 17% 0;
+}
+#page4{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.req-info {
+    color: #FBB341;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+.requ-info-content {
+    color: white;
+    font-family: 'Open sans', Arial, Helvetica, sans-serif;
+    line-height: 1rem;
+}
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#top-scores-ls{
+    margin: 45% 0;
+    text-align: center;
+    float: right;
+}
+.img-src {
+    display: inherit;
+}
+#page6{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+

@@ -1,0 +1,67 @@
+body{
+   margin: 0;
+   background-color: #9B835F;
+}
+.icon {
+   display: flex;
+   flex-direction: row;
+}
+.title {
+   font-size: 2rem;
+   font-family: sans-serif;
+   font-weight: bold;
+   color: #F9B23D;
+   margin-left: 1rem;
+   margin-top: 0.5rem;
+ }
+
+ figure{
+   text-align: center;
+   max-width: 30%;
+ }
+ .rocks {
+   max-width: 100%;
+   padding: 10px;
+}
+.refresh{
+   display: inline;
+   max-width: 30%;
+   padding: 10px;
+}
+
+.chosen {
+   background-color: #C4C4C4;
+   border-radius: 10px;
+ }
+
+.img-hover:hover{
+   transform: scale(1.2) rotate(15deg);
+}
+.vs {
+   color: #BD0000;
+   margin-top: 12.5rem;
+   margin-bottom: 3rem;
+ }
+ .player-win, .com-win {
+   /* Default display is none  */
+  display: none;
+   /* Default display is none  */
+  color: white;
+  font-weight: bolder;
+  background-color: #4C9654;
+  transform: rotate(-15deg);
+  
+  margin: 40% 0 ;
+}
+
+.draw {
+   /* Default display is none  */
+  display: none;
+   /* Default display is none  */
+  color: white;
+  background-color: #035B0C;
+  font-weight: bolder;
+  transform: rotate(-15deg);
+  margin: 40% 0;
+}
+ 
